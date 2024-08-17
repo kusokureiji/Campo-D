@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: url('campo.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nube {
+    position: absolute;
+    top: 10%;
+    width: 100px;
+    animation: moverNube linear infinite;
+}
+
+@keyframes moverNube {
+    from { left: -150px; }
+    to { left: 100%; }
+}
+
+.tulipan {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    display: none;
+}
+
+#mensajeFinal {
+    display: none;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+}
